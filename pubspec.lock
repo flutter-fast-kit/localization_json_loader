@@ -43,27 +43,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.15.0-nullsafety.3"
-  convert:
-    dependency: transitive
-    description:
-      name: convert
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "2.1.1"
-  csv:
-    dependency: transitive
-    description:
-      name: csv
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "4.0.3"
-  easy_localization_loader:
-    dependency: "direct main"
-    description:
-      name: easy_localization_loader
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.0.2"
   fake_async:
     dependency: transitive
     description:
@@ -100,20 +79,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  http:
-    dependency: transitive
-    description:
-      name: http
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.12.2"
-  http_parser:
-    dependency: transitive
-    description:
-      name: http_parser
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "3.1.4"
   intl:
     dependency: transitive
     description:
@@ -177,20 +142,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.0.4+3"
-  pedantic:
-    dependency: transitive
-    description:
-      name: pedantic
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "1.9.0"
-  petitparser:
-    dependency: transitive
-    description:
-      name: petitparser
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "3.0.4"
   platform:
     dependency: transitive
     description:
@@ -336,20 +287,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.1.0"
-  xml:
-    dependency: transitive
-    description:
-      name: xml
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "3.7.0"
-  yaml:
-    dependency: transitive
-    description:
-      name: yaml
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "2.2.1"
 sdks:
   dart: ">=2.10.0-110 <2.11.0"
   flutter: ">=1.12.13+hotfix.5 <2.0.0"

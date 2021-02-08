@@ -5,11 +5,12 @@ import 'dart:developer';
 import 'dart:io';
 import 'dart:ui';
 
-import 'package:easy_localization_loader/src/asset_loader.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sp_util/sp_util.dart';
+
+import 'asset_loader.dart';
 
 class JsonLoader extends AssetLoader {
   /// 获取资源文件中的语言包
