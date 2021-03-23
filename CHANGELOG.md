@@ -1,3 +1,7 @@
+## [2.0.0]
+
+* 空安全支持
+
 ## [1.0.3]
 
 * remove easy_localization_loader dependencie

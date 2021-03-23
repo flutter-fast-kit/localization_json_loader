@@ -27,21 +27,20 @@ class JsonLoader extends AssetLoader {
 
   Future<Map<String, dynamic>> loadJsonWithLocale(Locale locale) async {
     var haveLocalLanguage = SpUtil.getBool('localLanguage');
-    Map<String, dynamic> localeMap;
+    Map<String, dynamic> localeMap = {};
     var localePath;
-    if (haveLocalLanguage) {
+    if (haveLocalLanguage != null && haveLocalLanguage) {
       localePath = await getLocaleDocPath(locale);
       var file = File(localePath);
       if (file.existsSync()) {
         var localeStr = await file.readAsString();
-        localeMap = json.decode(localeStr);
+        localeMap = await compute(_parseData, localeStr);
       }
     }
 
-    if (localeMap == null) {
+    if (localeMap.isEmpty) {
       localePath = await getLocaleAssetsPath(locale);
-      localeMap =
-          await compute(_parseData, await rootBundle.loadString(localePath));
+      localeMap = await compute(_parseData, await rootBundle.loadString(localePath));
     }
 
     log('localization loader: load json file $localePath');
